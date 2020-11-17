@@ -153,7 +153,6 @@ public class RNEspiderModule extends ReactContextBaseJavaModule {
         HashMap<String, String> paramInfo = new HashMap<String, String>();
         paramInfo.put("reqAccount", "");
         paramInfo.put("reqAccountPass", "");
-        paramInfo.put("reqSearchGbn", "2");
 
         HashMap<String, HashMap<String, String>> jobInfo = new HashMap<String, HashMap<String, String>>();
         jobInfo.put(ENGINE_JOB_MODULE_KEY, module);
@@ -193,7 +192,6 @@ public class RNEspiderModule extends ReactContextBaseJavaModule {
         HashMap<String, String> paramInfo = new HashMap<String, String>();
         paramInfo.put("reqAccount", "");
         paramInfo.put("reqAccountPass", "");
-        paramInfo.put("reqSearchGbn", "2");
 
         HashMap<String, HashMap<String, String>> jobInfo = new HashMap<String, HashMap<String, String>>();
         jobInfo.put(ENGINE_JOB_MODULE_KEY, module);
@@ -236,7 +234,6 @@ public class RNEspiderModule extends ReactContextBaseJavaModule {
             HashMap<String, String> paramInfo = new HashMap<String, String>();
             paramInfo.put("reqAccount", "");
             paramInfo.put("reqAccountPass", "");
-            paramInfo.put("reqSearchGbn", "2");
 
             HashMap<String, HashMap<String, String>> jobInfo = new HashMap<String, HashMap<String, String>>();
             jobInfo.put(ENGINE_JOB_MODULE_KEY, module);
@@ -295,7 +292,7 @@ public class RNEspiderModule extends ReactContextBaseJavaModule {
             HashMap<String, String> paramInfo = new HashMap<String, String>();
             paramInfo.put("reqAccount", account);
             paramInfo.put("reqAccountPass", accountPass);
-            paramInfo.put("reqSearchGbn", "2");
+            paramInfo.put("reqSearchGbn", "0");
 
             HashMap<String, HashMap<String, String>> jobInfo = new HashMap<String, HashMap<String, String>>();
             jobInfo.put(ENGINE_JOB_MODULE_KEY, module);

@@ -75,7 +75,6 @@ RCT_REMAP_METHOD(getS4AccountsByLogin, getS4AccountsByLogin: (NSString*)s4code
     NSMutableDictionary *paramInfo     = [NSMutableDictionary dictionary];
     [paramInfo setObject:@""    forKey:@"reqAccount"]; //계좌번호
     [paramInfo setObject:@""    forKey:@"reqAccountPass"];    //계좌 비밀번호
-    [paramInfo setObject:@"2"   forKey:@"reqSearchGbn"];
     
     NSMutableDictionary *jobInfo = [NSMutableDictionary dictionary];
     [jobInfo setObject:@"_"         forKey:@"_KEY"];
@@ -120,7 +119,6 @@ RCT_REMAP_METHOD(getS4AccountsByCert, getS4AccountsByCert: (NSString*)s4code
     NSMutableDictionary *paramInfo     = [NSMutableDictionary dictionary];
     [paramInfo setObject:@""    forKey:@"reqAccount"];
     [paramInfo setObject:@""    forKey:@"reqAccountPass"];
-    [paramInfo setObject:@"2"   forKey:@"reqSearchGbn"];
     
     NSMutableDictionary *jobInfo = [NSMutableDictionary dictionary];
     [jobInfo setObject:@"_"         forKey:@"_KEY"];
@@ -165,7 +163,6 @@ RCT_REMAP_METHOD(oneclickByCert, oneclickByCert: (NSArray*)rows
         NSMutableDictionary *paramInfo     = [NSMutableDictionary dictionary];
         [paramInfo setObject:@""    forKey:@"reqAccount"];
         [paramInfo setObject:@""    forKey:@"reqAccountPass"];
-        [paramInfo setObject:@"2"   forKey:@"reqSearchGbn"];
         
         NSMutableDictionary *jobInfo = [NSMutableDictionary dictionary];
         [jobInfo setObject:@"_"         forKey:@"_KEY"];
@@ -223,7 +220,7 @@ RCT_REMAP_METHOD(getStocksByJobs, getStocksByJobs: (NSArray*)rows resolver: (RCT
         NSMutableDictionary *paramInfo     = [NSMutableDictionary dictionary];
         [paramInfo setObject:account        forKey:@"reqAccount"]; //계좌번호
         [paramInfo setObject:accountPass    forKey:@"reqAccountPass"];    //계좌 비밀번호
-        [paramInfo setObject:@"2"           forKey:@"reqSearchGbn"];
+        [paramInfo setObject:@"0"           forKey:@"reqSearchGbn"];
         
         NSMutableDictionary *jobInfo = [NSMutableDictionary dictionary];
         [jobInfo setObject:[NSString stringWithFormat:@"_%@%@", s4code, account]         forKey:@"_KEY"];

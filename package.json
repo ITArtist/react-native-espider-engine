@@ -1,7 +1,7 @@
 {
   "name": "react-native-espider-engine",
   "title": "React Native Espider Engine",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "TODO",
   "main": "index.js",
   "scripts": {
